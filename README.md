@@ -1,6 +1,6 @@
 # Password Strength Checker
 
-A beginner-friendly Python cybersecurity project that checks the strength of a password based on common security criteria.
+A beginner-friendly Python cybersecurity project that checks password strength using multiple basic security criteria.
 
 ## Features
 
@@ -9,10 +9,13 @@ A beginner-friendly Python cybersecurity project that checks the strength of a p
 - Checks for lowercase letters
 - Checks for numbers
 - Checks for special characters
-- Detects a small list of common passwords
+- Detects common passwords
 - Warns about repeated characters
-- Calculates a score out of 5
-- Classifies the password as Weak, Medium, or Strong
+- Detects predictable sequences
+- Calculates a password score
+- Classifies passwords as Weak, Medium, or Strong
+- Provides security suggestions
+- Hides password input using Python's `getpass` module
 
 ## Technologies Used
 
@@ -22,9 +25,10 @@ A beginner-friendly Python cybersecurity project that checks the strength of a p
 ## How to Run
 
 1. Install Python.
-2. Open the project folder in VS Code.
-3. Open the terminal.
-4. Run:
+2. Clone or download this repository.
+3. Open the project folder in VS Code.
+4. Open the terminal.
+5. Run:
 
 ```bash
 python password_checker.py
