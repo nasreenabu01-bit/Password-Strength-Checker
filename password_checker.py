@@ -4,7 +4,18 @@ print("================================")
 
 password = input("Enter your password: ")
 
-common_passwords = ["123456", "password", "qwerty", "abc123", "admin"]
+common_passwords = [
+    "123456",
+    "password",
+    "123456789",
+    "qwerty",
+    "abc123",
+    "admin",
+    "welcome",
+    "letmein",
+    "password1",
+    "123123"
+]
 
 score = 0
 
@@ -61,5 +72,12 @@ elif score <= 4:
     print("Password strength: Medium")
 else:
     print("Password strength: Strong")
+if score <= 2:
+    print("Suggestion: Add more security features to your password.")
+elif score <= 4:
+    print("Suggestion: Add more variety to make your password stronger.")
+else:
+    print("Suggestion: Your password meets all basic checks.")
+
 
 print("--------------------------------")
