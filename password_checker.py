@@ -45,6 +45,13 @@ if password.lower() in common_passwords:
 if len(set(password)) < len(password) / 2:
     print("⚠ Warning: Password contains many repeated characters.")
 
+sequences = ["123", "456", "789", "abc", "xyz"]
+
+for sequence in sequences:
+    if sequence in password.lower():
+        print("⚠ Warning: Password contains a predictable sequence.")
+        break
+
 print("--------------------------------")
 print("Password score:", score, "/ 5")
 
