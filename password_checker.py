@@ -61,6 +61,7 @@ sequences = ["123", "456", "789", "abc", "xyz"]
 for sequence in sequences:
     if sequence in password.lower():
         print("⚠ Warning: Password contains a predictable sequence.")
+        score = max(0, score - 1)
         break
 
 print("--------------------------------")
